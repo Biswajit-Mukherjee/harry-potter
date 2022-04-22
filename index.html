@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Universe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Welcome to Hogwarts School of Witchcraft & Wizardry</h1>
+    </header>
+
+    <main class="wrapper">
+        <section class="search">
+            <div class="search-wrapper">
+                <div class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="search__searchbox" id="searchbox" placeholder="Search characters" autofocus>
+                <div class="search__clear hidden" id="clear-search"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </section>
+
+        <section class="houses">
+            <div class="hidden house house__gryffindor">
+                <h2 class="house__header"><span>Gryffindor</span></h2>
+                <div class="house__body"></div>
+            </div>
+            <div class="hidden house house__slytherin">
+                <h2 class="house__header"><span>Slytherin</span></h2>
+                <div class="house__body"></div>
+            </div>
+            <div class="hidden house house__hufflepuff">
+                <h2 class="house__header"><span>Hufflepuff</span></h2>
+                <div class="house__body"></div>
+            </div>
+            <div class="hidden house house__ravenclaw">
+                <h2 class="house__header"><span>Ravenclaw</span></h2>
+                <div class="house__body"></div>
+            </div>
+        </section>
+
+        <section class="no-match hidden" id="no-search-match">
+            <div class="no-match__img"><img src="./no-match.ico" alt="No match"></div>
+            <div class="no-match__text">No character found by that name</div>
+        </section>
+    </main>
+
+    <script src="./requests.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
