@@ -8,7 +8,7 @@ fetch('https://hp-api.herokuapp.com/api/characters/students', {}).then((response
     }
 }).then((data) => {
     apiData = data
-    renderData(apiData)
+    renderData(apiData, filters)
 }).catch((error) => {
     console.log(`Error occured. Error code: ${error}`)
 })

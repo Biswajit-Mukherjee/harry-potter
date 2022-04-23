@@ -26,7 +26,7 @@ const filterByHouse = (data, houseName) => data.filter((member) => {
     return member.house === houseName
 })
 
-const renderData = (data) => {
+const renderData = (data, filters) => {
     hideElement(noSearchMatchDiv)
     showElement(houses)
 

@@ -15,18 +15,18 @@ searchBox.addEventListener('input', (e) => {
     if (e.target.value.length > 0) {
         showElement(searchBoxClear)
         filters.searchText = e.target.value
-        renderData(apiData)
+        renderData(apiData, filters)
 
         searchBoxClear.addEventListener('click', () => {
             clearElementValue(e.target)
             focusOnElement(e.target)
             hideElement(searchBoxClear)
             filters.searchText = ''
-            renderData(apiData)
+            renderData(apiData, filters)
         })
     }   else {
         hideElement(searchBoxClear)
         filters.searchText = ''
-        renderData(apiData)
+        renderData(apiData, filters)
     }
 })
